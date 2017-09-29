@@ -1,0 +1,14 @@
+for compilation
+1-- mkdir build-debug   --> create build directory inside caffe 
+2-- cd  build-debug 
+3-- cmake .. -DCPU_ONLY=ON -DCMAKE_BUILD_TYPE=Debug
+4-- make all
+5-- make test
+6-- make runtest
+7-- make install  --> to create relocatable files in ..../build/install folder
+
+
+
+for gdb
+
+(gdb)handle SIGILL nostop
